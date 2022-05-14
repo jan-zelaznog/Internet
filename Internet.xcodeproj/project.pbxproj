@@ -13,6 +13,9 @@
 		3D075040282F08200052D449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D07503E282F08200052D449 /* Main.storyboard */; };
 		3D075042282F08220052D449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D075041282F08220052D449 /* Assets.xcassets */; };
 		3D075045282F08220052D449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D075043282F08220052D449 /* LaunchScreen.storyboard */; };
+		3D07504E282F09510052D449 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D07504D282F09510052D449 /* Network.framework */; };
+		3D075050282F28180052D449 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D07504F282F28180052D449 /* WebKit.framework */; };
+		3D075052282F2F960052D449 /* geo_vertical.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D075051282F2F960052D449 /* geo_vertical.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3D075041282F08220052D449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D075044282F08220052D449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D075046282F08220052D449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D07504D282F09510052D449 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		3D07504F282F28180052D449 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3D075051282F2F960052D449 /* geo_vertical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = geo_vertical.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D075050282F28180052D449 /* WebKit.framework in Frameworks */,
+				3D07504E282F09510052D449 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,7 @@
 			children = (
 				3D075037282F08200052D449 /* Internet */,
 				3D075036282F08200052D449 /* Products */,
+				3D07504C282F09510052D449 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		3D075037282F08200052D449 /* Internet */ = {
 			isa = PBXGroup;
 			children = (
+				3D075051282F2F960052D449 /* geo_vertical.jpg */,
 				3D075038282F08200052D449 /* AppDelegate.swift */,
 				3D07503A282F08200052D449 /* SceneDelegate.swift */,
 				3D07503C282F08200052D449 /* ViewController.swift */,
@@ -65,6 +75,15 @@
 				3D075046282F08220052D449 /* Info.plist */,
 			);
 			path = Internet;
+			sourceTree = "<group>";
+		};
+		3D07504C282F09510052D449 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D07504F282F28180052D449 /* WebKit.framework */,
+				3D07504D282F09510052D449 /* Network.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +147,7 @@
 				3D075045282F08220052D449 /* LaunchScreen.storyboard in Resources */,
 				3D075042282F08220052D449 /* Assets.xcassets in Resources */,
 				3D075040282F08200052D449 /* Main.storyboard in Resources */,
+				3D075052282F2F960052D449 /* geo_vertical.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E9KS5E39JS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Internet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mx.unam.dgtic.Internet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janzelaznog.ddam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,6 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E9KS5E39JS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Internet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,7 +348,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mx.unam.dgtic.Internet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janzelaznog.ddam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
